@@ -11,4 +11,8 @@ import Foundation
 struct CoinData: Codable {
     let asset_id_quote: String
     let rate: Double
+    
+    var priceString: String {
+        return String(format: "%.2f", rate)
+    }
 }
