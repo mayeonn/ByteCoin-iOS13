@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     }
 }
 
+
+//MARK: - UIPickerViewDataSource, UIPickerViewDelegate
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     // determine how many columns we want in our picker.
@@ -45,6 +47,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
 }
 
+
+//MARK: - CoinManagerDelegate
 extension ViewController: CoinManagerDelegate {
     func didFailWithError(error: Error) {
         print(error)
